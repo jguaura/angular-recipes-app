@@ -1,4 +1,4 @@
-import { ShoppingListComponent } from './shopping-list-component/shopping-list.component';
+import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list-edit/shopping-list-edit.component';
 import { NgModule } from '@angular/core';
 

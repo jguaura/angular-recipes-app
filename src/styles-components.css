@@ -10,3 +10,6 @@ label {
 input[type=text] {
   @apply border border-solid border-gray-300 rounded-sm px-2.5 py-2 text-sm;
 }
+.separator {
+  @apply h-[1px] bg-grey-400;
+}
