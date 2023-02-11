@@ -5,11 +5,12 @@ import { RecipeBookModule } from './recipe-book/recipe-book.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent],
-  imports: [BrowserModule, HeaderComponent, RecipeBookModule, ShoppingListModule]
+  imports: [BrowserModule, HeaderComponent, RecipeBookModule, ShoppingListModule, BrowserAnimationsModule]
 })
 export class AppModule {}
