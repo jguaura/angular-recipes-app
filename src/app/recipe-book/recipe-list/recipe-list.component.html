@@ -1,4 +1,4 @@
 <div class="flex flex-col items-start gap-3">
   <button class="btn bg-blue-300">New recipe</button>
-  <app-recipe-item [recipes]="recipes" class="w-full"></app-recipe-item>
+  <app-recipe-item [recipe]="recipe" *ngFor="let recipe of recipes" class="w-full"></app-recipe-item>
 </div>
