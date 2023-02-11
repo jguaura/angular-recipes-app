@@ -1,1 +1,9 @@
-<h4>recipe item component</h4>
+<div class="select-none flex justify-between p-3 border shadow-md rounded-md transition-all hover:bg-blue-100 active:scale-[0.99]" role="button" *ngFor="let recipe of recipes">
+  <div>
+    <h4>{{ recipe.name }}</h4>
+    <p>{{ recipe.description }}</p>
+  </div>
+  <div>
+    <img class="max-h-[50px] rounded-sm" [src]="recipe.imagePath" alt="recipe-img" />
+  </div>
+</div>

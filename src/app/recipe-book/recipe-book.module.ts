@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { RecipeComponent } from './recipe-book.component';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
@@ -8,7 +9,7 @@ import { NgModule } from '@angular/core';
 @NgModule({
   declarations: [RecipeComponent, RecipeDetailComponent, RecipeListComponent, RecipeItemComponent],
   exports: [RecipeComponent, RecipeDetailComponent, RecipeListComponent, RecipeItemComponent],
-  imports: []
+  imports: [BrowserModule]
 })
 
 export class RecipeBookModule {}
