@@ -1,5 +1,5 @@
 .btn {
-  @apply px-2.5 py-2 text-white text-sm font-semibold rounded-md disabled:text-gray-400 disabled:bg-gray-300 active:scale-[0.99];
+  @apply px-2.5 py-2 text-white tracking-wide text-sm  font-semibold rounded-md disabled:text-gray-400 disabled:bg-gray-300 active:scale-[0.99];
 }
 label {
   @apply text-xs;
@@ -11,5 +11,5 @@ input[type='text'] {
   @apply border border-solid border-gray-300 rounded-sm px-2.5 py-2 text-sm;
 }
 .separator {
-  @apply h-[1px] bg-grey-400;
+  @apply h-[1px] bg-grey-400; 
 }

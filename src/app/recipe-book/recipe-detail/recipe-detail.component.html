@@ -1,1 +1,31 @@
-<h4>recipe detail component</h4>
+<div>
+  <img src="" alt="" />
+</div>
+<div>
+  <h1 class="mb-2 text-xl">Recipe name</h1>
+</div>
+<div class="relative">
+  <button
+    mat-button
+    [matMenuTriggerFor]="menu"
+    yPosition="above"
+    class="btn bg-blue-400/80 flex items-center gap-1"
+  >
+    <span>Manage Recipe</span> 
+    <mat-icon class="text-base">keyboard_arrow_down</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" class="border bg-white mt-2">
+    <button
+      mat-menu-item
+      class="!text-sm !min-h-0 !p-3 transition hover:bg-grey-300"
+    >
+      Description
+    </button>
+    <button
+      mat-menu-item
+      class="!text-sm !min-h-0 !p-3 transition hover:bg-grey-300"
+    >
+      Ingredients
+    </button>
+  </mat-menu>
+</div>
