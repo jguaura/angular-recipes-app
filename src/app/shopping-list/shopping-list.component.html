@@ -2,10 +2,12 @@
   <div>
     <app-shopping-list-edit></app-shopping-list-edit>
   </div>
-  <hr class="separator">
+  <hr class="separator" />
   <div>
-    <ul>
-      <button></button>
+    <ul class="flex flex-col items-start gap-y-2">
+      <button *ngFor="let ingredient of ingredients" class="text-sm">
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </button>
     </ul>
   </div>
 </div>

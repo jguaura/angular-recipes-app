@@ -2,14 +2,15 @@
   @apply px-2.5 py-2 text-white tracking-wide text-sm  font-semibold rounded-md disabled:text-gray-400 disabled:bg-gray-300 active:scale-[0.99];
 }
 label {
-  @apply text-xs;
+  @apply text-sm;
 }
 .form-control {
   @apply flex flex-col gap-y-0.5;
 }
-input[type='text'] {
-  @apply border border-solid border-gray-300 rounded-sm px-2.5 py-2 text-sm;
+input[type='text'],
+input[type='number'] {
+  @apply border border-solid border-gray-300 rounded-sm px-2.5 py-2 text-sm appearance-none;
 }
 .separator {
-  @apply h-[1px] bg-grey-400; 
+  @apply h-[1px] bg-grey-400;
 }
