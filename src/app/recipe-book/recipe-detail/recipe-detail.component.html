@@ -1,9 +1,4 @@
-<div>
-  <img src="" alt="" />
-</div>
-<div>
-  <h1 class="mb-2 text-xl">Recipe name</h1>
-</div>
+<h1 class="text-xl mb-2">Recipe Detail</h1>
 <div class="relative">
   <button
     mat-button
@@ -11,7 +6,7 @@
     yPosition="above"
     class="btn bg-blue-400/80 flex items-center gap-1"
   >
-    <span>Manage Recipe</span> 
+    <span>Manage Recipe</span>
     <mat-icon class="text-base">keyboard_arrow_down</mat-icon>
   </button>
   <mat-menu #menu="matMenu" class="border bg-white mt-2">
@@ -28,4 +23,9 @@
       Ingredients
     </button>
   </mat-menu>
+</div>
+<div class="mt-3 pr-4">
+  <img [src]="recipe?.imagePath" alt="{{ recipe.name }}" class="w-32 rounded-md"/>
+  <h1 class="my-2 text-xl">{{ recipe.name }}</h1>
+  <p>{{ recipe.description }}</p>
 </div>
