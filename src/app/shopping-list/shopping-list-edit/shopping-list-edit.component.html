@@ -2,16 +2,15 @@
   <div class="flex gap-4">
     <div class="form-control">
       <label>Name</label>
-      <input type="text">
+      <input type="text" #nameInput />
     </div>
     <div class="form-control">
       <label>Amount</label>
-      <input type="number">
+      <input type="number" #amountInput />
     </div>
-
   </div>
   <div class="flex gap-x-3">
-    <button class="btn bg-green-500/90">Add</button>
+    <button class="btn bg-green-500/90" (click)="onAddIngredients()">Add</button>
     <button class="btn bg-red-500">Delete</button>
     <button class="btn text-black">Clear</button>
   </div>
