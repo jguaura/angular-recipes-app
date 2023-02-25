@@ -1,20 +1,23 @@
 import { Injectable, EventEmitter } from '@angular/core';
+import { Ingredient } from '../shared/ingredient.model';
 import { Recipe } from './recipe-book.model';
 
 @Injectable({ providedIn: 'root' })
 export class RecipeBookService {
   recipeSelected = new EventEmitter<Recipe>();
-  
+
   private recipes: Recipe[] = [
     new Recipe(
-      'Milanesio esio eso',
-      'This is just a test description',
-      'https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      'Tasty Schnitzel',
+      'A super-tasty Schnitzel - just awesome!',
+      'https://media.istockphoto.com/id/1357426599/es/foto/chuleta-de-cerdo-frita-con-patatas-fritas-y-ensalada-de-verduras-frescas-sobre-mesa-de-madera.jpg?s=1024x1024&w=is&k=20&c=mvpb7KxaXCPCVc2rZhgAgfpamk0Vgh6ogdyQtWYnZk4=',
+      [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
     ),
     new Recipe(
-      'Periquito pin pin',
-      'This is just a test description 2 22 2',
-      'https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      'Big Fat Burger',
+      'What else you need to say?',
+      'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg',
+      [new Ingredient('Buns', 2), new Ingredient('Meat', 1)]
     )
   ];
 
