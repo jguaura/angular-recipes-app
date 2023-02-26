@@ -1,3 +1,5 @@
+import { RecipeBookService } from './../recipe-book.service';
+import { Ingredient } from './../../shared/ingredient.model';
 import { Component, Input } from '@angular/core';
 import { Recipe } from '../recipe-book.model';
 
@@ -7,8 +9,8 @@ import { Recipe } from '../recipe-book.model';
 })
 export class RecipeDetailComponent {
   @Input() recipe: Recipe;
-  constructor() {
-  }
+  constructor(private recipeService: RecipeBookService) {}
   onClickBtn() {
+    this.recipeService.addIngredientsToSL(this.recipe.ingredients)
   }
 }
