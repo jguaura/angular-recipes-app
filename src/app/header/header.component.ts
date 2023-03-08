@@ -1,5 +1,5 @@
 import { RouterModule } from '@angular/router';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -8,10 +8,4 @@ import { MatIconModule } from '@angular/material/icon';
   standalone: true,
   imports: [MatIconModule, RouterModule]
 })
-export class HeaderComponent {
-  @Output() navClickEvent = new EventEmitter();
-
-  onNavClick(navData) {
-    this.navClickEvent.emit(navData.srcElement.innerText);
-  }
-}
+export class HeaderComponent {}
