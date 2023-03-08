@@ -1,8 +1,4 @@
 <app-header (navClickEvent)="setView($event)"></app-header>
 <div class="flex flex-col gap-y-10 p-4">
-  <!-- <app-recipe *ngIf="!showShoppingList; else shoppingList"></app-recipe>
-  <ng-template #shoppingList>
-    <app-shopping-list></app-shopping-list>
-  </ng-template> -->
   <router-outlet></router-outlet>
 </div>
