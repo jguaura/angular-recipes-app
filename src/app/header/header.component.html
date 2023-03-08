@@ -2,8 +2,24 @@
   <div class="flex gap-8">
     <a href="#"> Recipes Book </a>
     <ul class="flex gap-4">
-      <li><a routerLink="/recipes" role="button">Recipes</a></li>
-      <li><a routerLink="/shopping-list" role="button">Shopping List</a></li>
+      <li>
+        <a
+          class="transition-all pb-1 border-b-[2px] border-transparent"
+          routerLink="/recipes"
+          routerLinkActive="!border-blue-200"
+          role="button"
+          >Recipes</a
+        >
+      </li>
+      <li>
+        <a
+          class="transition-all pb-1 border-b-[2px] border-transparent"
+          routerLink="/shopping-list"
+          routerLinkActive="!border-blue-200"
+          role="button"
+          >Shopping List</a
+        >
+      </li>
     </ul>
   </div>
   <div class="flex items-center justify-center" role="button">
