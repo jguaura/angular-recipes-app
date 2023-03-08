@@ -14,7 +14,7 @@ export class RecipeBookService {
       'https://media.istockphoto.com/id/1357426599/es/foto/chuleta-de-cerdo-frita-con-patatas-fritas-y-ensalada-de-verduras-frescas-sobre-mesa-de-madera.jpg?s=1024x1024&w=is&k=20&c=mvpb7KxaXCPCVc2rZhgAgfpamk0Vgh6ogdyQtWYnZk4=',
       [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
     ),
-    new Recipe(
+    new Recipe( 
       'Big Fat Burger',
       'What else you need to say?',
       'https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg',

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, DropdownDirective],
@@ -17,7 +18,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
     HeaderComponent,
     RecipeBookModule,
     ShoppingListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ]
 })
 export class AppModule {}
