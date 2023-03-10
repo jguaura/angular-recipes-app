@@ -1,6 +1,6 @@
 <h1 class="text-xl mb-2">Recipe list</h1>
 <div class="flex flex-col items-start gap-3">
-  <button class="btn bg-blue-400/80">New recipe</button>
+  <button class="btn bg-blue-400/80" [routerLink]="['new']">New recipe</button>
   <app-recipe-item
     [recipe]="recipe"
     *ngFor="let recipe of recipes"
