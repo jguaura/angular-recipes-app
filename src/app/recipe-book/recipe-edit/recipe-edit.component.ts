@@ -15,7 +15,6 @@ export class RecipeEditComponent implements OnInit {
         (params: Params) => {
           this.id = +params['id']
           this.isEditing = params['id'] !== null;
-          console.log(this.isEditing)
         }
       )
   }
