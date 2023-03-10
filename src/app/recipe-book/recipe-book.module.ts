@@ -7,12 +7,15 @@ import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { CdkMenuModule } from '@angular/cdk/menu';
 import { MatMenuModule } from '@angular/material/menu';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { RecipeDetailStartComponent } from './recipe-detail-start/recipe-detail-start.component';
 @NgModule({
   declarations: [
     RecipeComponent,
     RecipeDetailComponent,
     RecipeListComponent,
-    RecipeItemComponent
+    RecipeItemComponent,
+    RecipeDetailStartComponent
   ],
   exports: [
     RecipeComponent,
@@ -20,6 +23,6 @@ import { NgModule } from '@angular/core';
     RecipeListComponent,
     RecipeItemComponent
   ],
-  imports: [BrowserModule, CdkMenuModule, MatMenuModule, MatIconModule]
+  imports: [BrowserModule, CdkMenuModule, MatMenuModule, MatIconModule, RouterModule]
 })
 export class RecipeBookModule {}
