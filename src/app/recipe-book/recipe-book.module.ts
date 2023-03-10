@@ -9,13 +9,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { RecipeDetailStartComponent } from './recipe-detail-start/recipe-detail-start.component';
+import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 @NgModule({
   declarations: [
     RecipeComponent,
     RecipeDetailComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    RecipeDetailStartComponent
+    RecipeDetailStartComponent,
+    RecipeEditComponent
   ],
   exports: [
     RecipeComponent,
